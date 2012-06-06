@@ -1,0 +1,12 @@
+{application, lifeguard_random,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { lifeguard_random_app, []}},
+  {env, []}
+ ]}.

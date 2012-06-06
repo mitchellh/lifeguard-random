@@ -1,0 +1,6 @@
+deps/
+dist/
+ebin/
+rel/lifeguard_random/
+.eunit/
+*.beam
