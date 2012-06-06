@@ -10,7 +10,7 @@
 %% ===================================================================
 
 start(_StartType, _StartArgs) ->
-    io:format("App started.~n"),
+    lager:info("WHAT"),
     lifeguard_random_sup:start_link().
 
 stop(_State) ->
