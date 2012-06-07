@@ -17,10 +17,14 @@ list of enabled plugins for Lifeguard. That's it!
 ## Usage
 
 Once the plugin is installed, you can use the random data source with your
-watches. To do this, add a new data source in your app config. For example:
+watches. To do this, enable the plugin and add a new data source to your
+`sys.config` file. Example:
 
 ```erlang
-{"random", lifeguard_ds_random, []}
+{data_sources, [
+    {"random", lifeguard_ds_random, []}
+  ]},
+{plugins, [lifeguard_random]}
 ```
 
 Then, you can query it like this from a watch:
