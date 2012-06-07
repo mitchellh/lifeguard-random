@@ -10,7 +10,6 @@
 %% ===================================================================
 
 start(_StartType, _StartArgs) ->
-    lager:info("WHAT"),
     lifeguard_random_sup:start_link().
 
 stop(_State) ->
